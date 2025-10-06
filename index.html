@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Power Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1txt>Intelligent Power Management System</h1txt>
+            <p class="subtitle">Optimize energy usage and reduce electricity bills</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="grid-status">
+                <h2>Grid Status</h2>
+                <div class="status-indicator">
+                    <div class="status-dot" id="gridStatusDot"></div>
+                    <span id="gridStatusText">Stable</span>
+                </div>
+                <div class="power-usage">
+                    <h3>Current Power Usage</h3>
+                    <div class="usage-meter">
+                        <div class="meter-fill" id="usageFill"></div>
+                    </div>
+                    <span id="usageValue">0 W</span>
+                </div>
+                <div class="queue-status">
+                    <h3>Device Queue Status</h3>
+                    <div id="queueStatus">No devices in queue</div>
+                </div>
+            </div>
+
+            <div class="device-controls">
+                <h2>Device Management</h2>
+                <div class="device-list" id="deviceList">
+                    <!-- Devices will be populated by JavaScript -->
+                </div>
+                <button style="height: 35px; font-size: .9rem; place-items: center;" class="btn-primary" id="addDeviceBtn">Add New Device</button>
+            </div>
+        </div>
+
+        <div class="priority-settings">
+            <h2>Priority Settings</h2>
+            <p>Drag to reorder device priority (top = highest priority)</p>
+            <ul class="priority-list" id="priorityList">
+                <!-- Priority list will be populated by JavaScript -->
+            </ul>
+        </div>
+
+        <div class="scheduling">
+            <h2>Device Scheduling</h2>
+            <div class="schedule-controls">
+                <div class="schedule-item">
+                    <label for="scheduleDevice">Device:</label>
+                    <select id="scheduleDevice">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="schedule-item">
+                    <label for="scheduleTime">Time:</label>
+                    <input type="time" id="scheduleTime">
+                </div>
+                <div class="schedule-item">
+                    <label for="scheduleAction">Action:</label>
+                    <select id="scheduleAction">
+                        <option value="on">Turn On</option>
+                        <option value="off">Turn Off</option>
+                    </select>
+                </div>
+                <button class="btn-secondary cbtn" id="addScheduleBtn">Add Schedule</button>
+            </div>
+            <div class="schedule-list" id="scheduleList">
+                <!-- Schedules will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="ai-recommendations">
+            <h2>AI Recommendations</h2>
+            <div class="recommendation-box" id="recommendationBox">
+                <p style="margin-bottom: 10px ;">Click below to get AI-powered energy optimization recommendations</p>
+                <button class="btn-primary" id="getRecommendationsBtn">Get Recommendations</button>
+                <div class="recommendation-content" id="recommendationContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Device Modal -->
+    <div class="modal" id="addDeviceModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Device</h2>
+            <form id="deviceForm">
+                <div class="form-group">
+                    <label for="deviceName">Device Name:</label>
+                    <input type="text" id="deviceName" required>
+                </div>
+                <div class="form-group">
+                    <label for="deviceWatts">Power Consumption (Watts):</label>
+                    <input type="number" id="deviceWatts" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="devicePriority">Priority:</label>
+                    <select id="devicePriority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deviceCategory">Category:</label>
+                    <select id="deviceCategory">
+                        <option value="appliance">Major Appliance</option>
+                        <option value="comfort">Comfort Device (Lights, TV, Fan)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Add Device</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

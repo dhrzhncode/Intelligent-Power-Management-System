@@ -1,0 +1,81 @@
+{
+"defaultDevices": [
+{
+    "id": 1,
+    "name": "Refrigerator",
+    "watts": 150,
+    "priority": "medium",
+    "status": "on",
+    "category": "appliance"
+},
+{
+    "id": 2,
+    "name": "Washing Machine",
+    "watts": 500,
+    "priority": "medium",
+    "status": "off",
+    "category": "appliance"
+},
+{
+    "id": 3,
+    "name": "Grinder",
+    "watts": 750,
+    "priority": "high",
+    "status": "off",
+    "category": "appliance"
+},
+{
+    "id": 4,
+    "name": "Mixer",
+    "watts": 300,
+    "priority": "high",
+    "status": "off",
+    "category": "appliance"
+},
+{
+    "id": 5,
+    "name": "AC",
+    "watts": 1500,
+    "priority": "medium",
+    "status": "off",
+    "category": "appliance"
+},
+{
+    "id": 6,
+    "name": "Living Room Lights",
+    "watts": 100,
+    "priority": "high",
+    "status": "on",
+    "category": "comfort"
+},
+{
+    "id": 7,
+    "name": "TV",
+    "watts": 120,
+    "priority": "medium",
+    "status": "on",
+    "category": "comfort"
+},
+{
+    "id": 8,
+    "name": "Ceiling Fan",
+    "watts": 75,
+    "priority": "high",
+    "status": "on",
+    "category": "comfort"
+}
+],
+"powerLimits": {
+"household": 5000,
+"smallBusiness": 10000,
+"shop": 3000
+},
+"peakHours": {
+"morning": ["06:00", "10:00"],
+"evening": ["18:00", "22:00"]
+},
+"nightSchedule": {
+"start": "22:00",
+"end": "06:00"
+}
+}
