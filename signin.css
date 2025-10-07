@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 98vh;
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(49, 48, 48);
     color: aliceblue;
     font-family: 'Radio Canada', sans-serif;
 }
@@ -41,7 +41,7 @@ body{
     max-width: fit-content;
     min-width: 550px;
     border-radius: 20px;
-    background-color: rgba(54, 53, 53, 0.1);
+    background-color: rgba(68, 66, 66, 0.1);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.322);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.438);
@@ -94,7 +94,7 @@ input{
     border-radius: 20px;
     padding: 0px 15px;
     color: aliceblue;
-    background-color: rgb(58, 57, 57);
+    background-color: rgb(73, 71, 71);
 }
 input:hover, input:active{
     padding: 0px 14px;
