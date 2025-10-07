@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
 
         buttonContainer.innerHTML = `
-            <button id="submit">Sign-in</button>
+            <button id="submit">Submit</button>
             <button id="signup">Sign-up</button>
         `;
 

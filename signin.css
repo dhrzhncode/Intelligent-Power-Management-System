@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 98vh;
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(36, 35, 35);
     color: aliceblue;
     font-family: 'Radio Canada', sans-serif;
 }
@@ -41,7 +41,7 @@ body{
     max-width: fit-content;
     min-width: 550px;
     border-radius: 20px;
-    background-color: rgba(116, 115, 115, 0.1);
+    background-color: rgba(54, 53, 53, 0.1);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.322);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.438);
@@ -89,11 +89,12 @@ input{
     outline: none;
     width: 250px;
     height: 40px;
+    margin-right: 20px;
     font-size: 1.2rem;
     border-radius: 20px;
     padding: 0px 15px;
     color: aliceblue;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(58, 57, 57);
 }
 input:hover, input:active{
     padding: 0px 14px;
@@ -152,10 +153,11 @@ button:active{
     background-color: #181717;
 }
 input:invalid {
-    border-color: #ff4444;
+    /* border: 1px solid greenyellow; */
+    border-color: #e3ff44;
 }
 input:valid {
-    border-color: #00C851;
+    border-color: #07c800;
 }
 .error-message{
     position: absolute;

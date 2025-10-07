@@ -236,12 +236,12 @@ header h1txt {
     color: #ffffff;
 }
 .btn-danger {
-    background-color: #e74c3c;
+    background-color: #a33028;
     border-radius: 5px;
     color: white;
 }
 .btn-danger:hover {
-    background-color: #5e5b5b;
+    background-color: #e62d2d;
     border-radius: 15px;
 }
 
