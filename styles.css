@@ -23,6 +23,27 @@ body {
 h3{
     font-weight: none;
 }
+.icon{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #050505;
+    transition: .2s linear;
+    svg{
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        height: 30px;
+    }
+}
+.icon:hover{
+    scale: 1.05;
+    background-color: #c50d0d;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

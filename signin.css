@@ -1,0 +1,164 @@
+@import url('https://fonts.cdnfonts.com/css/radio-canada-2');
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: rgb(48, 47, 47);
+    color: aliceblue;
+    font-family: 'Radio Canada', sans-serif;
+}
+.icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #050505;
+    transition: .2s linear;
+    svg{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 30px;
+    }
+}
+.icon:hover{
+    scale: 1.05;
+    background-color: #c50d0d;
+}
+
+.signinBox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 650px;
+    height: fit-content;
+    max-width: fit-content;
+    min-width: 550px;
+    border-radius: 20px;
+    background-color: rgba(116, 115, 115, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.322);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.438);
+    padding: 20px 20px 40px 20px;
+}
+h2txt{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border-bottom: 1px solid rgb(1, 255, 1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.616);
+}
+.sbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+.lableBox{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    height: 70px;
+    /* background-color: black; */
+}
+label{
+    font-size: 1.5rem;
+    width: 250px;
+    padding-left: 20px;
+}
+input{
+    position: relative;
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 0px 15px;
+    color: aliceblue;
+    background-color: rgb(39, 39, 39);
+}
+input:hover, input:active{
+    padding: 0px 14px;
+    border: 1px solid rgb(153, 255, 0);
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+}
+button{
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(201, 201, 201);
+    color: rgb(59, 59, 59);
+    transition: .1s linear;
+}
+button:hover{
+    background-color: red;
+    color: aliceblue;
+}
+button:active{
+    scale: .9;
+    color: rgb(59, 59, 59);
+    background: rgb(0, 255, 98);
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.lableBox {
+    margin-bottom: 15px;
+}
+
+#captchaText {
+    font-weight: bold;
+    background-color: #555454;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: .1s linear;
+}
+#captchaText:hover {
+    background-color: #181717;
+}
+input:invalid {
+    border-color: #ff4444;
+}
+input:valid {
+    border-color: #00C851;
+}
+.error-message{
+    position: absolute;
+    top: 60px;
+    left: 280px;
+}

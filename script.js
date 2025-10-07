@@ -708,6 +708,14 @@ class PowerManagementSystem {
 }
 
 // Initialize the system when the page loads
+document.addEventListener('DOMContentLoaded',function(){
+    const signinbtn = document.getElementById('signin');
+    if (signinbtn){
+        signinbtn.addEventListener('click', function(){
+            window.location.href = 'signin.html';
+        });
+    }
+})
 document.addEventListener('DOMContentLoaded', () => {
     window.powerSystem = new PowerManagementSystem();
 });
